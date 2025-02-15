@@ -49,3 +49,5 @@ def _add_to_metadata(metadata: dict, domain: str, successful_crawl: bool) -> dic
         metadata[domain] = {}
     metadata[domain]['successful'] = metadata.get(domain, {}).get("successful", 0) + successful_crawl
     metadata[domain]["total"] = metadata.get(domain, {}).get("total", 0) + 1
+
+    
